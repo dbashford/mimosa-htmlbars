@@ -1,0 +1,31 @@
+{
+  "name": "mimosa-htmlbars",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dbashford/mimosa-htmlbars",
+  "author": "David Bashford",
+  "description": "A HTMLBars client template compiler for Mimosa",
+  "contributors": [
+    {
+      "name": "David Bashford",
+      "email": "dbashford@hotmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbashford/mimosa-htmlbars"
+  },
+  "keywords": [
+    "mimosa",
+    "mmodule",
+    "compiler",
+    "htmlbars"
+  ],
+  "dependencies": {
+    "htmlbars": "0.3.0"
+  },
+  "license": "MIT",
+  "main": "./src",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
