@@ -19,6 +19,7 @@ var regularBoilerplate =
   "  if (!env.dom){env.dom = new HTMLBars.DOMHelper();}\n" +
   "  if (!env.hooks){env.hooks = HTMLBars.hooks;}\n" +
   "  if (!env.partials){env.partials = templates;}\n" +
+  "  if (!env.helpers){env.helpers = {};}\n" +
   "  return env;\n" +
   "}\n";
 

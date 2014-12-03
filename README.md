@@ -32,7 +32,7 @@ htmlbars:
 * `extensions`: an array of strings, the extensions of your HTMLBars files.
 * `helpers`: an array of strings, the paths from `watch.javascriptDir` to the files containing HTMLBars helper/partial registrations
 
-## Creating runtime
+## Creating runtime library
 
 * Install and build htmlbars
 * `npm install -g esperanto`
@@ -51,3 +51,10 @@ export {
 ```
 * Run esperanto: `esperanto -b -i htmlbars-runtime.js -o htmlbars-runtime-bundle.js --strict`
 * `htmlbars-runtime-bundle.js` is your new AMD compliant browser HTMLBars library.
+* (Possible bug with esperanto) Change the last 4 export lines to look like this:
+```javascript
+__export('hooks', function () { return hooks__default; });
+__export('helpers', function () { return helpers__default; });
+__export('Morph', function () { return Morph__default; });
+__export('DOMHelper', function () { return DOMHelper__default; });
+```
